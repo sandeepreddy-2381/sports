@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .icons {
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            color: #eacf4f;
+        }
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 2rem;
+        margin: 0 2rem;
+        z-index: 100;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            color: #333;
+        }
+    }
+
+    .navbar .space {
+        display: inline-block;
+        width: 25rem;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 1.5rem;
+        left: 49%;
+        transform: translateX(-50%);
+    }
+
+    .logo img {
+        height: 6rem;
+        width: 10rem;
+    }
+
+}
+
+
+  .container {
+    margin-top: 100px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    max-width: 100%;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
+
+  #about {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+
+
+
+  #reviews, #contact {
+    padding: 50px 0;
+  }
+  
+  .reviews-container, .contact-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .reviews-container h2, .contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    margin-bottom: 20px;
+  }
+  
+  .review h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .review p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+
+
+
+
+
+  .contact-container p {
+    margin-bottom: 20px;
+  }
+  
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-container label, .contact-container input, .contact-container textarea, .contact-container button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .contact-container textarea {
+    height: 150px;
+  }
+  
+  .contact-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  
+@media only screen and (max-width: 768px) {
+    .container {
+      padding: 10px; 
+    }
+  
+    .products {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+    .header {
+      padding: 2rem;
+    }
+  
+    .navbar a {
+      font-size: 1.5rem; 
+      margin: 0 1rem; 
+    }
+  
+    .logo img {
+      height: 4rem; 
+      width: 8rem;
+    }
+  
+    .product {
+      padding: 5px; 
+    }
+  
+    .product img {
+      max-width: 80%;
+    }
+  
+    .review h3 {
+      font-size: 1.2rem; 
+    }
+  
+    .review p {
+      font-size: 1rem; 
+    }
+  
+    .contact-container textarea {
+      height: 100px;
+    }
+  }
+
+  /* Media query for devices with a maximum width of 768px (e.g., tablets) */
+@media only screen and (max-width: 768px) {
+    .header {
+      padding: 2rem; /* Adjust padding for smaller screens */
+    }
+  
+    .navbar {
+      flex-direction: column; /* Change navigation links to stack vertically */
+      align-items: center; /* Center-align navigation links */
+      margin-top: 1rem; /* Add margin to separate navigation links */
+    }
+  
+    .navbar a {
+      margin: 0.5rem 0; /* Add margin between navigation links */
+      font-size: 1.5rem; /* Decrease font size for navigation links */
+    }
+  
+    .logo {
+      left: 50%; /* Center-align logo */
+      transform: translateX(-50%);
+    }
+  
+    .logo img {
+      height: 5rem; /* Decrease logo size for smaller screens */
+      width: auto; /* Adjust logo width */
+    }
+  }
+  
+  /* Media query for devices with a maximum width of 480px (e.g., smartphones) */
+  @media only screen and (max-width: 480px) {
+    .header {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .icons {
+      font-size: 2rem; /* Decrease icon size for smaller screens */
+    }
+  
+    .navbar a {
+      font-size: 1.2rem; /* Further decrease font size for navigation links */
+      margin: 0.3rem 0; /* Further reduce margin between navigation links */
+    }
+  
+    .logo img {
+      height: 4rem; /* Further decrease logo size for smaller screens */
+    }
+  }
+  

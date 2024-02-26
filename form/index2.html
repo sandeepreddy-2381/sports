@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars icons"></div>
+    <div id="search-btn" class="fas fa-search icons"></div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <span class="space"></span>
+        <a href="#reviews">Reviews</a>
+        <a href="#conatact">contact</a>
+    </nav>
+
+    <a href="#" class="fas fa-shopping-cart icons"></a>
+    <a href="#home" class="logo"><img src="images/coming-soon.avif" alt="img"></a>
+</header>
+  <div class="container" id="home">
+    <div class="products">
+      <div class="product">
+        <img src="images/Suede-Classic-XXI-Men's-Sneakers.avif" alt="Product 1">
+        <h2>Suede Classic XXI Men's Sneakers</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Suede-Classic-XXI-Men's-Sneakers (1).avif" alt="Product 1">
+        <h2>Suede Classic XXI Men's Sneakers</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/PUMA-x-NEYMAR-JR-Unisex-Baseball-Cap.avif" alt="Product 1">
+        <h2>PUMA x NEYMAR JR Unisex Baseball Cap</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/PUMA-Phase-Unisex-Backpack.avif" alt="Product 1">
+        <h2>PUMA-Phase-Unisex-Backpack</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Fundamentals-Unisex-Sports-Bag.avif" alt="Product 1">
+        <h2>Fundamentals-Unisex-Sports-Bag</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Classics-Jacquard-Men's-Pants.avif" alt="Product 1">
+        <h2>Classics-Jacquard-Men's-Pants</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Blktop-Rider-Preppy-Unisex-Sneakers.avif" alt="Product 1">
+        <h2>Blktop-Rider-Preppy-Unisex-Sneakers</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Men's-Classics-Logo-Tee.avif" alt="Product 1">
+        <h2>Men's-Classics-Logo-Te</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/Palermo-Unisex-Sneakers.avif" alt="Product 1">
+        <h2>Palermo-Unisex-Sneakers</h2>
+        <p>1999/-</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan tincidunt metus, sit amet iaculis tortor facilisis ac. Nulla facilisi. Nullam nec lorem sed nulla congue malesuada. Aliquam erat volutpat. Integer sit amet leo in magna faucibus vestibulum vel nec urna. Cras quis efficitur velit, id vehicula est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vel est non lorem rhoncus dapibus.</p>
+      <p>Integer eu justo nec libero pretium eleifend vel eu dui. Nam quis risus nec arcu dignissim mattis. Aliquam erat volutpat. Nulla eu nisi nec purus sodales faucibus. Mauris a nunc sit amet purus vestibulum tempor id vitae neque. Suspendisse potenti. Proin auctor turpis vel enim tempor, vel sollicitudin nisi dapibus. Proin a ligula magna. Integer dictum diam vel vestibulum tincidunt.</p>
+    </div>
+  </section>
+  
+
+
+  <section id="reviews">
+    <div class="reviews-container">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>"Pellentesque sit amet libero ac diam placerat vestibulum. Duis convallis convallis tellus, eu elementum eros."</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>For any inquiries or assistance, please feel free to contact us using the form below:</p>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
